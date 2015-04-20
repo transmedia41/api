@@ -10,6 +10,10 @@ var users = require('./routes/user');
 
 var app = express();
 
+var mongoose = require('mongoose');
+ 
+mongoose.connect('mongodb://localhost/hydromerta');
+
 // view engine setup
 
 app.set('views', path.join(__dirname, 'views'));
